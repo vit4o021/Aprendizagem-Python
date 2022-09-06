@@ -1,0 +1,31 @@
+--Python para exe com códigos simples--
+
+***Códigos que não interagem com outros arquivos ou ferramentas do computador***
+Usaremos a biblioteca pyinstaller
+
+Passo 0 - Abrir o prompt do windows
+Passo 1 - Instalar o pyinstaller (pip install pyinstaller)
+Passo 2 - digitar: cd caminho da pasta onde está o nome_do_programa.py
+Passo 3 - Para pegar o nome do nome_do_programa.py mais rapidamente, digitar no prompt: dir
+Passo 3 - Digitar: pyinstaller -w nome_do_programa.py
+Passo 4 - Após feito o passo acima, basta usar a pasta dist para mandar para quem quiser (Antes de enviar para alguém é bom compactar a pasta para zip)
+
+--Python para executável em programas mais complexos--
+Objetivo:
+Muitas vezes nossos códigos puxam informações de outros arquivos ou, no caso de webscraping, usam outros arquivos como o chromedriver.exe para funcionar.
+
+Nesses casos, precisamos não só tomar alguns cuidados, mas também adaptar o nosso código para funcionar.
+
+O que usaremos:
+auto-py-to-exe para transformar o arquivo python em executável
+pathlib ou os para adaptar todos os "caminhos dos arquivos"
+Passo 0 - Abrir o prompt do windows
+Passo 1 - Instalar o auto-py-to-exe  (pip install auto-py-to-exe)
+Passo 2 - Digitar no prompt auto-py-to-exe e enter para abrir a interface do autopy
+O que colocar nos "Tópicos" da interface:
+Script location - seleciona o programa que quer transformar em executável
+Onefile - Seleciona One directory (Pasta com tudo)
+Control window - Seleciona Console Based
+additional files - Coloca arquivos que precisam estar no mesmo local do programa
+Advanced - Ir em debug, coloca imports ou qualquer outra opção sem ser em branco
+Settings - Em output directory , pode selecionar onde será salvo o arquivo
